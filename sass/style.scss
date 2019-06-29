@@ -1,4 +1,5 @@
 // font-family: 'Roboto', sans-serif;
+@charset 'utf-8';
 
 * {
   margin: 0;
@@ -7,32 +8,45 @@
 
 html {
   font-family: "Roboto", arial, sans-serif;
-  // font-size: 12px;
+  font-size: 12px;
 }
 
 .cv_container {
   background-color: #eee;
 
+  //Header
   .cv_about {
-    //Header
     display: flex;
-    flex-direction: column;
     width: 100vw;
+    padding: 2% 0;
     border-bottom: 4px solid cadetblue;
+    .image {
+      position: relative;
+      width: 70%;
+      top: 0;
+      left: 0;
+      display: flex;
+    }
     .cv_name {
-      section {
-        h1 {
-          font-size: 3rem;
-        }
+      position: relative;
+      top: 20%;
+      h1 {
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 2rem;
       }
     }
     img {
       display: block;
-      max-width: 305px;
-      max-height: 386px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 45%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    aside {
+      width: 30%;
+      padding-top: 10%;
+      font-size: 1rem;
     }
   }
   section {
@@ -47,9 +61,6 @@ html {
     }
     h3 {
       font-style: italic;
-    }
-    h4 {
-      font-size: ;
     }
   }
   section {
